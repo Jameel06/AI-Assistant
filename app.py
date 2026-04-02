@@ -320,15 +320,7 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
 # ── Main area ──
-st.markdown("""
-<div class="main-header">
-    <div class="main-header-left">
-        <h1>💹 FinChat AI</h1>
-        <p>Your intelligent finance assistant — ask anything about stocks, investing & personal finance</p>
-    </div>
-    <div class="header-badge">🤖 LLaMA 3 · Groq</div>
-</div>
-""", unsafe_allow_html=True)
+
 
 # ── Audio helper ──
 def generate_audio_b64(text):
@@ -394,9 +386,7 @@ else:
 
 
 # ── Input bar ──
-st.markdown('<div class="input-bar">', unsafe_allow_html=True)
-st.markdown('<div class="input-label">💬 Ask a question</div>', unsafe_allow_html=True)
-
+# ── Input bar ──
 col1, col2 = st.columns([5, 1])
 with col1:
     text_input = st.chat_input("e.g. What is P/E ratio? How does SIP work?")
@@ -409,8 +399,6 @@ with col2:
         icon_size="2x",
         pause_threshold=2.5
     )
-
-st.markdown('</div>', unsafe_allow_html=True)
 
 # ── Handle text ──
 if text_input:
