@@ -246,7 +246,8 @@ section[data-testid="stSidebar"] * { color: #e2e8f0 !important; }
 }
 
 /* Hide streamlit defaults */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
 .block-container { padding-top: 1.5rem !important; }
 </style>
 """, unsafe_allow_html=True)
